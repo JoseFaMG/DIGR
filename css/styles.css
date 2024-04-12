@@ -274,20 +274,94 @@ h2 {
     gap: 20px;
     margin: 20px;
 }
-.columna {
+
+/* Estilos de la primera columna */
+.columna1 {
+    flex: 1;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.columna1, .columna2 {
+
+/* Estilos de la segunda columna */
+.columna2 {
     flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos de la tercera columna */
 .columna3 {
     flex: 2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+/* Estilos compartidos para las secciones */
+.section {
+    text-align: center;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos de las imágenes dentro de las secciones */
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilos específicos de los párrafos dentro de las secciones */
+.section p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+/* Estilos generales del contenedor */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Estilos de todas las columnas */
+.columna {
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgba(94, 38, 255, 25%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .columna {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* Media query para ajustar el diseño en pantallas aún más pequeñas, como smartphones */
+@media screen and (max-width: 480px) {
+    .columna {
+        flex-basis: 100%;
+    }
+}
+
+/* Estilos compartidos para las secciones */
 .section {
     text-align: center;
     background-color: #f2f2f2;
@@ -296,6 +370,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos específicos de las imágenes dentro de las secciones */
 .section img {
     max-width: 100%;
     height: auto;
@@ -303,11 +378,13 @@ h2 {
     margin-bottom: 15px;
 }
 
+/* Estilos específicos de los párrafos dentro de las secciones */
 .section p {
     font-size: 18px;
     font-weight: bold;
     color: #333;
 }
+
 /* Stats Gallery */
 .stats {
     color: #717070;
@@ -672,50 +749,3 @@ nav img{
     height: 90%;
     margin-bottom: 10px;
 }
-/*ai ce ri qi cmerp qi ve  i i mqpw cer
-ai ce ri q ice r qi cer
-ai ce r qi iq wmpq wi cmerp qi ce r i qi cer
-ai ce ri i qwi cmepr qi cmerp qi cer
-ai ce ri  mp qwi cmepr qi x  ceri mp qwi cer
-ai ce ri i mpq wi cmerp qi cer ai ce r
-qi ce r ai ce ri i qwi ce r ai ce r i qwi ce r
-ai ce ri qi cmerp qi cer  qi ce r i qi cer
-ai ce ri qi cmerp qi cer
-ai ce i i qwi cmepr qi cmerp qi cmerp qi cer
-ai c eri i qwmp qwi cmepr qi cemrp qi er   qw
-qwi iqwmp qwi
-ai ce ri qi cer
-ai ce r
-q ce r i i qwi mepr qi merp qi cer
-a ce ri i i qwmp qwi cer  qwi cer  i qwi cer
-ai ce r iqwi ce r i qwi cer  ao ce ro qo ce r o qo ce r
-ai ce ri i mpq wi cmerp qi cer
-ai ce ri i qi wi qwiiq wi qiw iq wi cer
-ai ce ri qi ce r qi cer ai ce r
- qi cmerp qi cmerp qi cmerp qi cer
- ai ce rqi cmerp qi cer  ai ce r
-  qi ce r i qwi cer  ai ce ri qi ce r qi cer  a ce r
-   qi cmerp qi cmerp qi cmerp qi cer ai ce r
-    qi cmepr qi cmepr qi cer  ai ce r
-     qi cmerp qi cemrp qi cer  ai ce r
-     qi ce r qi ce r ai ce r
-      qi cmerp qi cmerp qi cer
-      ai ce r qi qmwp ce ri i qwmp ce r
-       qi cmerp qi cer ai ce r
-        qi cmerp qi qwi i iq wmp qwi cer au ce r i qiw  qw
-         qwi i qwmp qwi cmepr qi cer  ai c er
-          qi ce r qi ce r ai c r iqwi ce r
-           qi cer  ai ce r
-            qi ce r qi cer  ai ce r
-             qi ce r qi qi cmerp qi cer  ai ce r
-             q i cer  qi cer  ai c er
-               i qwi q wi q w
-                cemrp qi cmepr qi cer  ai ce r iqiw cer
-                ai ce r i qmp e r i mp qwi cmerp i mp qw
-                au ce r iq i cr ai ce r
-                qcer
-ai c eri i qwmp qwi cmerp qi cmerp qi cer
-ai ce r q i cemrp qi cmerp qi cer
-
-  qwi i qwi iq wi qmwp qwi qwi i mp qwi mp qw
-  */
