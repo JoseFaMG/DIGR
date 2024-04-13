@@ -8,7 +8,7 @@
 });
     /*text movement*/
     // function([string1, string2],target id,[color1,color2])
-    consoleText(['PROGRAMACION.', 'DISEÑO.', 'ARQUITECTURA'], 'text',['tomato','purple','red']);
+    consoleText(['PROGRAMACION.', 'DISEÑO.', 'ARQUITECTURA'], 'text',['tomato','purple','RED']);
 
     function consoleText(words, id, colors) {
         if (colors === undefined) colors = ['#fff'];
