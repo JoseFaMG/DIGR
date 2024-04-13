@@ -115,14 +115,14 @@ nav img{
 }
 /* Hero Section */
 .hero {
-    background-color: #B3B3B3;
     background: url("../images/background1.jpg");
+    background-size: cover;
     padding-top: 150px;
     padding-bottom: 150px;
 }
 .light {
     font-weight: bold;
-    color: #717070;
+    color: #bb1616;
 }
 .tagline {
     text-align: center;
@@ -270,6 +270,10 @@ nav img{
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+.section img:hover {
+    transform: scale(1.1); 
 }
 
 /* Estilos específicos de los párrafos dentro de las secciones */
@@ -295,6 +299,10 @@ nav img{
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.tarjeta:hover {
+    transform: scale(1.05);
 }
 
 .tarjeta-header {
@@ -317,7 +325,7 @@ nav img{
 
 /*capa transparente article*/
 .article{
-    background: rgba(65, 21, 87, 0.4);
+    background: rgba(65, 21, 87, 0.6);
     padding:20px;
     margin:20px 0;
     color:#fff;
