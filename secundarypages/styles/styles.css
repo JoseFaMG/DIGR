@@ -14,10 +14,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100vh; 
     margin: 0;
     padding: 0;
 }
+
 html{
     font-size: 12pt;
     font-family: Poppins, Segoe UI, Tahoma, sans-serif;
@@ -115,14 +116,14 @@ nav img{
 }
 /* Hero Section */
 .hero {
-    background: url("../images/background1.jpg");
+    background: url("../images/bac.gif");
     background-size: cover;
     padding-top: 150px;
     padding-bottom: 150px;
 }
 .light {
     font-weight: bold;
-    color: #bb1616;
+    color: #e68b4e;
 }
 .tagline {
     text-align: center;
@@ -191,7 +192,15 @@ nav img{
 
 /* Estilos de la tercera columna */
 .columna3 {
-    flex: 2;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.columna4 {
+    flex: 1;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
