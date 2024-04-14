@@ -223,6 +223,10 @@ nav img{
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+.section img:hover {
+    transform: scale(1.1); 
 }
 
 /* Estilos específicos de los párrafos dentro de las secciones */
@@ -263,37 +267,6 @@ nav img{
         flex-basis: 100%;
     }
 }
-
-/* Estilos compartidos para las secciones */
-.section {
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos específicos de las imágenes dentro de las secciones */
-.section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-}
-.section img:hover {
-    transform: scale(1.1); 
-}
-
-/* Estilos específicos de los párrafos dentro de las secciones */
-.section p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-}
-
-
-
 /*tarjetas*/
 .contenedor {
     display: flex;
