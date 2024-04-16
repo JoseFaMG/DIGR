@@ -34,8 +34,10 @@ html{
 }
 nav{
     height: 60px;
-    background: rgb(41,191,223);
-    background: linear-gradient(264deg, rgba(41,191,223,1) 0%, rgba(246,133,107,1) 40%, rgba(133,184,149,1) 100%);
+    background: rgb(3,150,186);
+    background: linear-gradient(90deg, rgba(3,150,186,1) 0%, rgba(239,126,41,1) 100%);
+
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
