@@ -326,13 +326,17 @@ nav img{
     flex: 1;
     margin-right: 20px;
     overflow: hidden; /* Para que la imagen no sobresalga del contenedor */
-    border-radius: 8px; /* Añade bordes redondeados al contenedor de la imagen */
+    border-radius: 10px; /* Añade bordes redondeados al contenedor de la imagen */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave a la imagen */
+    margin-right: 20px; /* Margen derecho para separación de los bordes */
+    margin-left: 20px; /* Margen izquierdo para separación de los bordes */
 }
 
 .image img {
-    max-width: 100%;
     display: block;
+    max-width: 100%;
+    width: 100%; /* Ajusta el ancho de la imagen al ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
     transition: transform 0.3s ease; /* Agrega una transición suave */
 }
 
@@ -342,7 +346,24 @@ nav img{
 
 .text {
     flex: 1;
+    padding: 20px; /* Agrega un espacio interno al contenedor de texto */
+    background-color: #f9f9f9; /* Agrega un color de fondo al contenedor de texto */
+    border-radius: 8px; /* Agrega bordes redondeados al contenedor de texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave al contenedor de texto */
+    margin-right: 20px; /* Margen derecho para separación de los bordes */
+    margin-left: 20px; /* Margen izquierdo para separación de los bordes */
 }
+
+.text h2 {
+    margin-top: 0; /* Elimina el margen superior predeterminado del título */
+}
+
+.text p {
+    margin-bottom: 0; /* Elimina el margen inferior predeterminado del párrafo */
+    text-align: justify;
+}
+
+
 
 /*capa transparente article*/
 .article{
