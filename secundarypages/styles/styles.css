@@ -10,7 +10,7 @@
     padding: 0;
 }
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #29bfdf, #f6856b, #85b895);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
@@ -34,10 +34,8 @@ html{
 }
 nav{
     height: 60px;
-    background: rgb(3,150,186);
-    background: linear-gradient(90deg, rgba(3,150,186,1) 0%, rgba(239,126,41,1) 100%);
-
-
+    background: rgb(41,191,223);
+    background: linear-gradient(264deg, rgba(41,191,223,1) 0%, rgba(246,133,107,1) 40%, rgba(133,184,149,1) 100%);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -127,11 +125,11 @@ nav img{
 }
 /* Hero Section */
 .hero {
-    background: url("../images/bac.gif");
-    background-size: cover;
+    background: url("../images/bac.gif") center center/cover; /* Ajusta la imagen de fondo */
     padding-top: 150px;
     padding-bottom: 150px;
 }
+
 .light {
     font-weight: bold;
     color: #e68b4e;
@@ -230,11 +228,12 @@ nav img{
 
 /* Estilos específicos de las imágenes dentro de las secciones */
 .section img {
-    max-width: 100%;
+    max-width: 300PX;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
     transition: transform 0.3s ease;
+
 }
 .section img:hover {
     transform: scale(1.1); 
@@ -288,20 +287,23 @@ nav img{
 
 .tarjeta {
     width: 300px;
-    border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregar la transición para la sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
 }
+
 .tarjeta:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar la sombra en hover */
 }
 
 .tarjeta-header {
     background-color: #f9f9f9;
     padding: 10px;
     text-align: center;
+    border-bottom: 1px solid #ddd; /* Añadir borde al encabezado */
 }
 
 .tarjeta-body {
@@ -313,6 +315,7 @@ nav img{
 .tarjeta.expandida .tarjeta-body {
     display: block;
 }
+
 /*texto con movimiento*/
 
 
