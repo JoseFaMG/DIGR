@@ -317,75 +317,103 @@ nav img{
 /*texto con img*/
 .container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
 }
 
 .image {
-    flex: 1;
-    margin-right: 20px;
-    overflow: hidden; /* Para que la imagen no sobresalga del contenedor */
-    border-radius: 10px; /* Añade bordes redondeados al contenedor de la imagen */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave a la imagen */
-    margin-right: 20px; /* Margen derecho para separación de los bordes */
-    margin-left: 20px; /* Margen izquierdo para separación de los bordes */
+    flex: 1 1 300px; /* Flex-grow: 1, flex-shrink: 1, flex-basis: 300px */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Espacio entre elementos */
+    order: 2; /* Cambia el orden de la imagen */
 }
 
 .image img {
     display: block;
-    max-width: 100%;
-    width: 100%; /* Ajusta el ancho de la imagen al ancho del contenedor */
-    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-    transition: transform 0.3s ease; /* Agrega una transición suave */
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
 .image:hover img {
-    transform: scale(1.05); /* Escala ligeramente la imagen al pasar el cursor sobre ella */
+    transform: scale(1.05);
 }
 
 .text {
-    flex: 1;
-    padding: 20px; /* Agrega un espacio interno al contenedor de texto */
-    background-color: #f9f9f9; /* Agrega un color de fondo al contenedor de texto */
-    border-radius: 8px; /* Agrega bordes redondeados al contenedor de texto */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave al contenedor de texto */
-    margin-right: 20px; /* Margen derecho para separación de los bordes */
-    margin-left: 20px; /* Margen izquierdo para separación de los bordes */
+    flex: 1 1 300px; /* Flex-grow: 1, flex-shrink: 1, flex-basis: 300px */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    order: 1; /* Cambia el orden del texto */
 }
 
 .text h2 {
-    margin-top: 0; /* Elimina el margen superior predeterminado del título */
+    margin-top: 0;
 }
 
 .text p {
-    margin-bottom: 0; /* Elimina el margen inferior predeterminado del párrafo */
+    margin-bottom: 0;
     text-align: justify;
 }
-/*darestilo a definiciones*/
+
+/* Estilos para las definiciones */
 .tooltip {
-    cursor: pointer;
-    border-bottom: 1px dashed #000;
     position: relative;
+    cursor: help;
 }
 
-.tooltip-definition {
+.tooltip:hover::after {
+    content: attr(data-tooltip);
     position: absolute;
-    background-color: #fff;
-    border: 1px solid #000;
-    padding: 10px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: none;
-    z-index: 1000; /* Asegura que el tooltip esté sobre otros elementos */
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.tooltip:hover .tooltip-definition {
-    display: block;
+.tooltip:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
+    z-index: 1;
 }
 
+.tooltip:hover::after,
+.tooltip:hover::before {
+    opacity: 1;
+}
 
+/* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
+    }
 
+    .image,
+    .text {
+        flex-basis: 100%; /* Establece el ancho completo para los elementos en pantallas pequeñas */
+        order: initial; /* Reinicia el orden de los elementos */
+    }
+}
 
 /*capa transparente article*/
 .article{
@@ -395,4 +423,59 @@ nav img{
     color:#fff;
     box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
 }
-/**/
+/*carrucel de tarjetas*/
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 100%;
+    margin-right: 20px;
+    transition: transform 0.5s ease;
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Esto centra la imagen horizontalmente */
+}
+
+
+.card-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}

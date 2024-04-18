@@ -82,3 +82,19 @@
             });
         });
     });
+/*carrucel*/
+    let slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        let i;
+        const slides = document.querySelectorAll('.card');
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+        slideIndex++;
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+        setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos (2000 milisegundos)
+    }
