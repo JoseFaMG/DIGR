@@ -571,6 +571,8 @@ button:hover {
 /* Estilo para los elementos de lista */
 .technology-section li {
     margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
 }
 
 /* Estilo para los títulos de sublistas */
