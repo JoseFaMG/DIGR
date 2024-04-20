@@ -499,10 +499,96 @@ button:hover {
     border-right: none;
 }
 
+/* Estilo para los párrafos dentro de la clase .column */
 .column p {
     margin-top: 0;
     font-size: 16px;
     line-height: 1.6;
     color: #333;
+    text-align: justify;
+    margin-bottom: 20px; /* Agregamos margen inferior para separar los párrafos */
 }
+
+.technologies-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.technologies-list h2 {
+    color: #333;
+    text-align: center;
+}
+
+.technologies-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.technologies-list li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.technologies-list li:last-child {
+    border-bottom: none;
+}
+
+.technologies-list h3 {
+    color: #007bff;
+}
+
+.technologies-list p {
+    color: #666;
+}
+/* Estilo para la sección de tecnologías */
+.technology-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el título de la sección */
+.technology-section h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las listas */
+.technology-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo para los elementos de lista */
+.technology-section li {
+    margin-bottom: 15px;
+}
+
+/* Estilo para los títulos de sublistas */
+.technology-section h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los párrafos */
+.technology-section p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Estilo para sublistas */
+.technology-section ul ul {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
 
