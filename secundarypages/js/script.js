@@ -86,7 +86,7 @@
     let slideIndex = 0;
     carousel();
 
-    function carousel() {Tecnologías web
+    function carousel() {
         let i;
         const slides = document.querySelectorAll('.card');
         for (i = 0; i < slides.length; i++) {
