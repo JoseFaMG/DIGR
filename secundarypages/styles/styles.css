@@ -425,60 +425,101 @@ nav img{
     box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
 }
 /*carrucel de tarjetas*/
-.carousel {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.carousel-inner {
+.carrusel{
     display: flex;
-}
-
-.card {
-    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     width: 100%;
-    margin-right: 20px;
-    transition: transform 0.5s ease;
+    height: 100vh;
 }
 
-.card img {
-    width: 25%;
-    height: auto;
-    display: block;
-    margin: 0 auto; /* Esto centra la imagen horizontalmente */
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
 }
 
-
-.card-content {
-    padding: 20px;
-    background-color: #f9f9f9;
+.img{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    height: 576px;
+    width: 1134px;
+    border-radius: 15px ;
+    margin: 5px;
+    object-fit: cover;
+    filter: saturate(175%);
 }
 
-button {
+.texto{
+    overflow: hidden;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    transform: translateY(0px);
+    margin-bottom: 9px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(63, 106, 138, 0.21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.texto h3{
+    text-shadow: 0px 0px 15px black;
+    padding-top: 40px;
     color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 20px;
-    transition: background-color 0.3s ease;
+    font-weight: 300;
+    font-size: 27px;
 }
 
-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.texto p{
+    align-items: center;
+    padding: 20px;
+    color:white;
+    font-size: 0px;
+    font-weight: 300;
 }
 
-.prev {
-    left: 0;
+.imagenes .texto{
+    width: 600px;
+    height: 100px;
+    transition: 1s;
 }
 
-.next {
-    right: 0;
+.imagenes:hover .texto{
+    transition: height 1s, transform 1s, background-color 1s;
+    transform: translateY(-150px);
+    height: 300px;
+    background-color: rgba(63, 106, 138, 0.71);
+}
+
+.imagenes:hover .texto p{
+    transition: font-size 0s .2s linear;
+    font-size: 23px;
+    font-weight: 300;
+
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.puntos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puntos p{
+    font-size: 100px;
+    font-weight: 500;
+    margin-top: -50px;
+    color: black;
+}
+
+.puntos .bold{
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #5E17EB ;
 }
 /*colum text*/
 .container {
@@ -590,5 +631,35 @@ button:hover {
     margin-top: 5px;
     margin-left: 20px;
 }
+.protocol-section, .tools-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.protocol-section h2, .tools-section h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.protocol-section ul, .tools-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.protocol-section li, .tools-section li {
+    margin-bottom: 20px;
+}
+
+.protocol-section h3, .tools-section h3 {
+    color: #007bff;
+}
+
+.protocol-section p, .tools-section p {
+    color: #666;
+}
 

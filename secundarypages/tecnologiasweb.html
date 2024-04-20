@@ -198,7 +198,8 @@
                 <li>
                     <h2>Tecnologías web</h2>
                     <p>Es un término amplio que abarca todas las herramientas, tecnologías y estándares utilizados
-                        para crear y mantener sitios web y aplicaciones web. Algunas de las tecnologías web más comunes incluyen:
+                        para crear y mantener sitios web y aplicaciones web. Algunas de las tecnologías web más comunes
+                        incluyen:
                     </p>
                     <h3>HTML (HyperText Markup Language)</h3>
                     <p>Es el lenguaje de marcado utilizado para estructurar el contenido de una página web, definiendo
@@ -261,32 +262,73 @@
         </div>
     </div>
     <div class="column">
-        <p>Phasellus tempus dui in leo ullamcorper, vitae aliquam nisi ultrices. Suspendisse potenti.</p>
+        <div class="protocol-section">
+            <h2>Protocolos de Comunicación</h2>
+            <ul>
+                <li>
+                    <h3>HTTP (Hypertext Transfer Protocol)</h3>
+                    <p>Facilita la transferencia de datos entre un cliente (navegador web) y un servidor web. Es un
+                        protocolo sin estado, lo que significa que cada solicitud se procesa de forma independiente.</p>
+                </li>
+                <li>
+                    <h3>HTTPS (HTTP Secure)</h3>
+                    <p>Es una extensión segura del protocolo HTTP que utiliza cifrado SSL/TLS para garantizar la
+                        seguridad de la comunicación entre el cliente y el servidor. Se utiliza para proteger datos
+                        sensibles, como información de inicio de sesión y transacciones financieras.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="tools-section">
+            <h2>Herramientas de Desarrollo y Depuración</h2>
+            <ul>
+                <li>
+                    <h3>Visual Studio Code</h3>
+                    <p>Un editor de código fuente ligero pero potente que es gratuito y está disponible en todas las
+                        plataformas principales. Ofrece una amplia gama de extensiones para facilitar el desarrollo web
+                        y otras tareas de programación.</p>
+                </li>
+                <li>
+                    <h3>Sublime Text</h3>
+                    <p>Un editor de texto avanzado para la programación y la marcación que es rápido, flexible y fácil
+                        de usar. Es altamente personalizable y cuenta con una comunidad activa que desarrolla
+                        complementos y temas.</p>
+                </li>
+                <li>
+                    <h3>Chrome Developer Tools</h3>
+                    <p>Un conjunto de herramientas integradas en el navegador Google Chrome que permite a los
+                        desarrolladores web depurar, editar y mejorar sus sitios y aplicaciones web. Incluye funciones
+                        como inspección de elementos, consola JavaScript, auditorías de rendimiento y más.</p>
+                </li>
+                <li>
+                    <h3>Firefox Developer Tools</h3>
+                    <p>Un conjunto de herramientas similares a las Chrome Developer Tools pero integradas en el
+                        navegador Mozilla Firefox. Proporciona capacidades de depuración y desarrollo web para mejorar
+                        la eficiencia y la calidad de las aplicaciones web.</p>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
-
-<div class="carousel">
-    <div class="carousel-inner">
-        <div class="card">
-            <img src="images/web1.png" alt="Imagen 1">
-            <div class="card-content">
-                <h3>Título 1</h3>
-                <p>Contenido de la tarjeta 1</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/web2.png" alt="Imagen 2">
-            <div class="card-content">
-                <h3>Título 2</h3>
-                <p>Contenido de la tarjeta 2</p>
-            </div>
-        </div>
-        <!-- Agrega más tarjetas aquí si es necesario -->
+<div class="carrusel">
+    <div class="atras">
+        <img id="atras" src="images/atras.svg" alt="atras" loading="lazy">
     </div>
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
+    <div class="imagenes">
+        <div id="img">
+            <img class="img" src="images/car1.jpg" alt="imagen 1" loading="lazy">
+        </div>
+        <div id="texto" class="texto">
+            <h3>Proyecto 01</h3>
+            <p>Este es el proyecto 01 fue desarrollado para un video de youtube. Si te gusta el contenido dale
+                like y suscribete</p>
+        </div>
+    </div>
+    <div class="adelante" id="adelante">
+        <img src="images/adelante.svg" alt="adelante" loading="lazy">
+    </div>
 </div>
-
+<div class="puntos" id="puntos"></div>
+<script src="js/app.js"></script>
 </body>
 <script src="js/script.js"></script>
 </html>
