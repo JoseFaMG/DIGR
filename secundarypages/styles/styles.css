@@ -346,8 +346,7 @@ nav img{
 .text {
     flex: 1 1 300px; /* Flex-grow: 1, flex-shrink: 1, flex-basis: 300px */
     padding: 20px;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -524,7 +523,8 @@ nav img{
 /*colum text*/
 .container {
     display: flex;
-    background-color: #f2f2f2;
+    backdrop-filter: blur(50px);
+    background-color: rgba(63, 106, 138, 0.21);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
