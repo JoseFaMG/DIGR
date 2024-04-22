@@ -258,8 +258,8 @@ nav img{
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: rgba(94, 38, 255, 25%);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    background-color: rgba(194, 109, 233, 0.21);
 }
 
 /* Media query para ajustar el diseño en pantallas más pequeñas */
@@ -524,7 +524,7 @@ nav img{
 .container {
     display: flex;
     backdrop-filter: blur(50px);
-    background-color: rgba(63, 106, 138, 0.21);
+    background-color: rgba(194, 109, 233, 0.21); 
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
