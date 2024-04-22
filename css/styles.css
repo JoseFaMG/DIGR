@@ -304,8 +304,20 @@ h2 {
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.columna4 {
+    flex: 2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 /* Estilos compartidos para las secciones */
 .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
@@ -315,11 +327,12 @@ h2 {
 }
 
 /* Estilos específicos de las imágenes dentro de las secciones */
-.section img {
+.columna1 .section img,
+.columna2 .section img,
+.columna3 .section img,
+.columna4 .section img{
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
 }
 
 /* Estilos específicos de los párrafos dentro de las secciones */
@@ -327,6 +340,8 @@ h2 {
     font-size: 18px;
     font-weight: bold;
     color: #333;
+    margin-top: auto; /* Alinea el texto en la parte inferior de la sección */
+    line-height: 1.6; 
 }
 /* Estilos generales del contenedor */
 .contenedor {
@@ -546,8 +561,6 @@ footer {
         float: none;
         display: none;
     }
-    header nav ul {
-    }
     nav ul li {
         margin-top: 0px;
         margin-right: 0px;
@@ -746,6 +759,114 @@ footer {
 }
 /*logo nav barr*/
 nav img{
-    height: 90%;
-    margin-bottom: 10px;
+    height: 100%; /* Ajusta la altura para que la imagen ocupe toda la altura del contenedor */
+    margin-right: 10px; /* Ajusta el margen derecho para dejar espacio entre la imagen y el texto */
+}
+.container {
+    position: relative;
+}
+
+.button-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-container a {
+    color: white; /* Aquí es donde se cambia el color del texto a blanco */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 60px;
+    text-decoration: none;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.button-container a:hover {
+    transform: scale(1.1);
+}
+
+.button-container .info {
+    display: flex;
+    align-items: center;
+}
+
+.button-container .text {
+    flex: 1;
+    padding-left: 20px;
+    color: white; /* Aquí también se cambia el color del texto a blanco */
+}
+
+.button-container .imagen {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.button-container .imagen img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.titulo {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.parrafo {
+    color: #666;
+    font-size: 28px;
+    line-height: 1.6;
+}
+
+.button-container .text p:first-child {
+    margin-top: 0;
+}
+
+/* Estilos para el nuevo contenido */
+.button-container .nueva-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button-container .nueva-text {
+    flex: 1;
+    padding-right: 20px;
+    color: white; /* Cambio de color del texto a blanco */
+}
+
+.button-container .nueva-imagen {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.button-container .nueva-imagen img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.nueva-titulo {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.nueva-parrafo {
+    color: #666;
+    font-size: 28px;
+    line-height: 1.6;
+}
+
+.button-container .nueva-text p:first-child {
+    margin-top: 0;
 }
