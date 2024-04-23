@@ -775,16 +775,36 @@ nav img{
 }
 
 .button-container a {
-    color: white; /* Aquí es donde se cambia el color del texto a blanco */
+    display: inline-block; /* Convertir los enlaces en bloques */
+    color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 50px 60px;
+    padding: 20px 30px; /* Reducir el espacio interno para que se vea más compacto */
     text-decoration: none;
     margin: 5px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    background-size: cover;
-    background-position: center;
+    border-radius: 5px; /* Agregar bordes redondeados para un aspecto más moderno */
+    text-align: center; /* Centrar el texto */
 }
+
+.button-container a:hover {
+    transform: scale(1.1); /* Hacer que el botón crezca ligeramente al pasar el cursor */
+}
+
+@media screen and (max-width: 768px) {
+    .button-container a {
+        padding: 15px 20px; /* Reducir el espacio interno en pantallas más pequeñas */
+        font-size: 14px; /* Reducir el tamaño de fuente en pantallas más pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .button-container a {
+        padding: 10px 15px; /* Reducir el espacio interno en pantallas aún más pequeñas */
+        font-size: 12px; /* Reducir el tamaño de fuente en pantallas aún más pequeñas */
+    }
+}
+
 
 .button-container a:hover {
     transform: scale(1.1);
