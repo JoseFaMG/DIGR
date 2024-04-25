@@ -9,26 +9,28 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     background-color: var(--veryLightGray);
-    position: relative; 
+    position: relative;
 }
 nav{
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 
 }
-nav ul{
+nav ul {
     width: 100%;
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: rgb(3,150,186);
-    background: linear-gradient(90deg, rgba(3,150,186,1) 0%, rgba(239,126,41,1) 100%);
+    background: rgb(3, 150, 186);
+    background: linear-gradient(90deg, rgba(3, 150, 186, 1) 0%, rgba(239, 126, 41, 1) 100%);
 }
-nav li{
+
+nav li {
     height: 50px;
 }
-nav a{
+
+nav a {
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -36,14 +38,17 @@ nav a{
     align-items: center;
     color: #ffffff;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: #f0f0f0;
     color: black;
 }
-nav li:first-child{
+
+nav li:first-child {
     margin-right: auto;
 }
-.sidebar{
+
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -51,30 +56,80 @@ nav li:first-child{
     width: 250px;
     background-color: rgba(58, 19, 79, 0.9);
     backdrop-filter: blur(12px);
-    box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.25);
     list-style: none;
     display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
-.sidebar li{
+
+.sidebar li {
     width: 100%;
 }
-.sidebar a{
+
+.sidebar a {
     width: 100%;
 }
-.menu-button{
+
+.menu-button {
     display: none;
 }
-@media(max-width: 800px){
-    .hideOnMobile{
+
+@media (max-width: 800px) {
+    nav ul {
+        justify-content: space-between; /* Solo en dispositivos móviles */
+    }
+
+    .hideOnMobile {
         display: none;
     }
-    .menu-button{
+
+    .menu-button {
         display: block;
+        cursor: pointer;
+    }
+
+    .sidebar {
+        width: 100%;
+        max-width: 250px;
+        background-color: rgba(58, 19, 79, 0.9);
+        position: absolute;
+        top: 0;
+        left: -250px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+
+    .sidebar li {
+        padding: 10px 20px;
+    }
+
+    .menu-button svg {
+        fill: #ffffff;
+        width: 30px;
+        height: 30px;
     }
 }
+
+.sidebar.show {
+    left: 0;
+}
+
+.sidebar li {
+    padding: 10px 20px;
+}
+
+.menu-button svg {
+    fill: #ffffff;
+    width: 30px;
+    height: 30px;
+}
+
 /*hero section*/
 :root {
     --red: hsl(0, 78%, 62%);
@@ -335,14 +390,21 @@ h2 {
     height: auto;
 }
 
+/* Estilos específicos de las imágenes dentro de las secciones */
+.section img {
+    width: 500px; /* Tamaño fijo para todas las imágenes */
+    height: auto;
+}
+
 /* Estilos específicos de los párrafos dentro de las secciones */
 .section p {
-    font-size: 18px;
+    font-size: 35px; /* Aumentamos el tamaño del texto a 20px */
     font-weight: bold;
     color: #333;
     margin-top: auto; /* Alinea el texto en la parte inferior de la sección */
-    line-height: 1.6; 
+    line-height: 1.6;
 }
+
 /* Estilos generales del contenedor */
 .contenedor {
     display: flex;
@@ -397,7 +459,7 @@ h2 {
 .section p {
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: white;
 }
 
 /* Stats Gallery */
@@ -762,111 +824,85 @@ nav img{
     height: 100%; /* Ajusta la altura para que la imagen ocupe toda la altura del contenedor */
     margin-right: 10px; /* Ajusta el margen derecho para dejar espacio entre la imagen y el texto */
 }
+
+/* Estilos generales */
 .container {
     position: relative;
 }
 
 .button-container {
     max-width: 1000px;
-    margin: 50px auto;
+    margin: 5px auto; /* Reducir el margen superior e inferior */
     padding: 0 20px;
     display: flex;
     justify-content: center;
 }
 
 .button-container a {
-    color: white; /* Aquí es donde se cambia el color del texto a blanco */
+    color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 50px 60px;
+    padding: 80px 110px; /* Ajuste de tamaño de los botones */
     text-decoration: none;
-    margin: 5px;
+    margin: 25px 15px; /* Ajuste de separación entre los botones */
     cursor: pointer;
     transition: transform 0.3s ease;
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: center;
+    position: relative; /* Añadir posición relativa */
 }
 
 .button-container a:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
+    z-index: 1; /* Hacer que el botón en hover aparezca al frente */
 }
 
-.button-container .info {
-    display: flex;
-    align-items: center;
+.button-container a::after {
+    content: attr(title); /* Usar el título como contenido */
+    position: absolute;
+    bottom: -30px; /* Ajustar posición */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
-.button-container .text {
-    flex: 1;
-    padding-left: 20px;
-    color: white; /* Aquí también se cambia el color del texto a blanco */
+.button-container a:hover::after {
+    opacity: 1;
 }
 
-.button-container .imagen {
-    width: 200px;
-    margin-right: 20px;
+/* Media queries para dispositivos móviles y tablets */
+@media only screen and (max-width: 768px) {
+    .button-container {
+        padding: 0 10px; /* Reducir el padding de los botones */
+        flex-wrap: wrap; /* Permitir que los botones se envuelvan en dispositivos móviles */
+    }
+
+    .button-container a {
+        padding: 50px 60px; /* Tamaño de los botones en dispositivos móviles */
+        margin: 10px auto; /* Separación entre los botones en dispositivos móviles */
+    }
 }
 
-.button-container .imagen img {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
+/* Media queries para tablets en modo paisaje */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .button-container a {
+        padding: 60px 80px; /* Tamaño de los botones en tablets en modo paisaje */
+    }
 }
 
-.titulo {
-    color: #333;
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
+/* Media queries para PCs y tablets en modo paisaje */
+@media only screen and (min-width: 1024px) {
+    .button-container a {
+        padding: 80px 110px; /* Tamaño de los botones en PCs y tablets en modo paisaje */
+    }
 }
 
-.parrafo {
-    color: #666;
-    font-size: 28px;
-    line-height: 1.6;
-}
-
-.button-container .text p:first-child {
-    margin-top: 0;
-}
-
-/* Estilos para el nuevo contenido */
-.button-container .nueva-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.button-container .nueva-text {
-    flex: 1;
-    padding-right: 20px;
-    color: white; /* Cambio de color del texto a blanco */
-}
-
-.button-container .nueva-imagen {
-    width: 200px;
-    margin-right: 20px;
-}
-
-.button-container .nueva-imagen img {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-}
-
-.nueva-titulo {
-    color: #333;
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.nueva-parrafo {
-    color: #666;
-    font-size: 28px;
-    line-height: 1.6;
-}
-
-.button-container .nueva-text p:first-child {
-    margin-top: 0;
-}
