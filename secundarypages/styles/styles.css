@@ -662,4 +662,158 @@ nav img{
 .protocol-section p, .tools-section p {
     color: #666;
 }
+/*aarticulo*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+section {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para encabezados de sección */
+section h2 {
+    color: #4058c8;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 10px;
+}
+
+/* Estilos para párrafos dentro de las secciones */
+section p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos para listas dentro de las secciones */
+section ul {
+    margin-top: 15px;
+    list-style-type: disc;
+}
+
+/* Estilos para elementos de lista dentro de las secciones */
+section li {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+/* Estilos para elementos de lista dentro de las secciones en dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    section li {
+        font-size: 14px;
+    }
+}
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    section {
+        border-radius: 0; /* Borde rectangular en dispositivos móviles */
+    }
+}
+
+/* Estilos para tabletas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 80%; /* Ajuste para tabletas */
+    }
+}
+/* Estilos para la sección de Consideraciones de Seguridad */
+section.security {
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Imagen a la izquierda */
+section.security::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 80px; /* Ancho de la imagen */
+    height: 80px; /* Altura de la imagen */
+    background-image: url('ruta/a/la/imagen-izquierda.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+/* Imagen a la derecha */
+section.security::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 80px; /* Ancho de la imagen */
+    height: 80px; /* Altura de la imagen */
+    background-image: url('ruta/a/la/imagen-derecha.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+/* Estilos para el contenido dentro de la sección */
+section.security-content {
+    padding-left: 100px; /* Ajusta según el ancho de la imagen izquierda */
+    padding-right: 100px; /* Ajusta según el ancho de la imagen derecha */
+}
+
+/* Estilos para encabezados de sección */
+section.security-content h2 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 10px;
+}
+
+/* Estilos para párrafos dentro de las secciones */
+section.security-content p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos para listas dentro de las secciones */
+section.security-content ul {
+    margin-top: 15px;
+    list-style-type: disc;
+}
+
+/* Estilos para elementos de lista dentro de las secciones */
+section.security-content li {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+/* Estilos para elementos de lista dentro de las secciones en dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    section.security-content li {
+        font-size: 14px;
+    }
+}
 
