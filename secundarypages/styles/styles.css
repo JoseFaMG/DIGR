@@ -744,35 +744,7 @@ section.security {
     transition: box-shadow 0.3s ease;
 }
 
-/* Imagen a la izquierda */
-section.security::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    width: 80px; /* Ancho de la imagen */
-    height: 80px; /* Altura de la imagen */
-    background-image: url('ruta/a/la/imagen-izquierda.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-}
 
-/* Imagen a la derecha */
-section.security::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    width: 80px; /* Ancho de la imagen */
-    height: 80px; /* Altura de la imagen */
-    background-image: url('ruta/a/la/imagen-derecha.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-}
 
 /* Estilos para el contenido dentro de la sección */
 section.security-content {

@@ -1,0 +1,89 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los títulos */
+h2 {
+    color: #333;
+}
+
+/* Estilos para los párrafos */
+p {
+    margin-bottom: 20px;
+}
+
+/* Estilos para las listas */
+ul {
+    margin-bottom: 20px;
+}
+
+/* Estilos para los elementos de lista */
+li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Estilos para los enlaces al pasar el cursor sobre ellos */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la línea horizontal */
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+/* Parallax Section */
+.banner {
+    background-color: #2D9AB7;
+    background-image: url(../images/img1.gif);
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.parallax {
+    color: #FFFFFF;
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 110px;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+.parallax_description {
+    color: #FFFFFF;
+    text-align: right;
+    padding-right: 100px;
+    width: 30%;
+    float: right;
+    font-weight: lighter;
+    line-height: 23px;
+}
