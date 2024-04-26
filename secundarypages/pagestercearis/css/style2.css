@@ -82,7 +82,7 @@ hr {
 /* Hero Section */
 .hero {
 	background-color: #B3B3B3;
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/industry-3087393_1280.jpg);
     height: 400px;
     background-attachment: fixed;
     background-size: cover;
@@ -211,7 +211,7 @@ footer .footer_column p {
 	width: 100%;
 	height: auto;
 	max-width: 400px;
-	max-height: 200px;
+	max-height: 300px;
 }
 footer .footer_column p {
 	padding-left: 30px;
@@ -292,8 +292,7 @@ footer {
 	float: none;
 	display: none;
 }
-header nav ul {
-}
+
 nav ul li {
 	margin-top: 0px;
 	margin-right: 0px;

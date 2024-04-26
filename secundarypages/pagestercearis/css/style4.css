@@ -8,82 +8,147 @@ body {
 
 /* Estilos para el encabezado */
 header {
-    background-color: #333;
-    color: #fff;
+    background: white;
+    color: #000000;
     padding: 20px;
     text-align: center;
 }
 
+/* Estilos para la sección de banner */
+/* Hero Section */
+.hero_header {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    letter-spacing: 4px;
+}
+/* Hero Section */
+.hero {
+    background: url("../images/sunset-5344024_1280.jpg") center center/cover; /* Ajusta la imagen de fondo */
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.light {
+    font-weight: bold;
+    color: #e68b4e;
+}
+.tagline {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 5px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/*capa transparente article*/
+.article{
+    backdrop-filter: blur(50px);
+    background-color: rgba(194, 109, 233, 0.21);
+    padding:20px;
+    margin:20px;
+    color: #ffffff;
+    box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
 /* Estilos para el contenedor principal */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra horizontalmente las columnas */
+    padding: 20px; /* Añade espacio alrededor del contenedor */
+}
+
+/* Estilos para las columnas */
+.column {
+    flex: 1 1 calc(33.33% - 20px); /* Calcula el ancho de las columnas en dispositivos medianos */
+    margin: 10px;
     padding: 20px;
-    background-color: #fff;
+    background: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregar la transición para la sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para los títulos */
-h2 {
-    color: #333;
+.column h2 {
+    color: #000000;
 }
 
-/* Estilos para los párrafos */
-p {
+.column p {
     margin-bottom: 20px;
+    text-align: justify;
+    color: #000000;
 }
 
-/* Estilos para las listas */
-ul {
+p img {
+    float: left; /* Hacer que la imagen flote a la izquierda del texto */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    max-width: 200px; /* Establecer un ancho máximo para la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 10px;
+}
+.column .imagen-1 {
+    display: block; /* Convertir la imagen en un bloque para poder aplicar márgenes automáticos */
+    margin: 0 auto; /* Centrar horizontalmente la imagen */
+    max-width: 100%; /* Establecer un ancho máximo para la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+    width: 500%; /* Ajustar el tamaño de la imagen al 80% del contenedor */
+    border-radius: 20px;
+}
+
+.column .imagen-2 {
+    display: block; /* Convertir la imagen en un bloque para poder aplicar márgenes automáticos */
+    margin: 0 auto; /* Centrar horizontalmente la imagen */
+    max-width: 100%; /* Establecer un ancho máximo para la imagen */
+    height: 40%; /* Mantener la proporción de la imagen */
+    width: 50%; /* Ajustar el tamaño de la imagen al 80% del contenedor */
+    border-radius: 20px;
+}
+.column ul {
     margin-bottom: 20px;
+
 }
 
-/* Estilos para los elementos de lista */
-li {
+.column li {
     margin-bottom: 10px;
+    color: #000000;
+    text-align: justify;
 }
 
-/* Estilos para los enlaces */
-a {
-    color: #007bff;
+.column a {
+    color: #000000;
     text-decoration: none;
+    text-align: justify;
 }
 
-/* Estilos para los enlaces al pasar el cursor sobre ellos */
-a:hover {
+.column a:hover {
     text-decoration: underline;
 }
+hr{
+    background: #5e26ff;
+    height:5px;
+}
+.column img {
+    max-width: 100px; /* Establecer un ancho máximo para las imágenes */
+    height: auto; /* Mantener la proporción de la imagen */
+    vertical-align: middle; /* Alinear verticalmente las imágenes */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
 
-/* Estilos para la línea horizontal */
-hr {
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 20px 0;
+/* Media queries para ajustes en diferentes tamaños de pantalla */
+@media only screen and (max-width: 768px) {
+    .column {
+        flex: 1 1 calc(50% - 20px); /* Calcula el ancho de las columnas en dispositivos pequeños */
+    }
 }
-/* Parallax Section */
-.banner {
-    background-color: #2D9AB7;
-    background-image: url(../images/img1.gif);
-    height: 400px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.parallax {
-    color: #FFFFFF;
-    text-align: right;
-    padding-right: 100px;
-    padding-top: 110px;
-    letter-spacing: 2px;
-    margin-top: 0;
-}
-.parallax_description {
-    color: #FFFFFF;
-    text-align: right;
-    padding-right: 100px;
-    width: 30%;
-    float: right;
-    font-weight: lighter;
-    line-height: 23px;
+
+@media only screen and (max-width: 576px) {
+    .column {
+        flex: 1 1 calc(100% - 20px); /* Calcula el ancho de las columnas en dispositivos extra pequeños */
+    }
 }
