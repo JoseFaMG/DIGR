@@ -61,8 +61,15 @@ hr {
     border-top: 1px solid #ccc;
     margin: 20px 0;
 }
-
-/*Paralax*/
+/* Parallax Section */
+.banner {
+	background-color: #2D9AB7;
+	background-image: url(../images/parallax.png);
+	height: 400px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 .parallax {
 	color: #FFFFFF;
 	text-align: right;
