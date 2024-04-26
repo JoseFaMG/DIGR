@@ -906,3 +906,56 @@ nav img{
     }
 }
 
+
+/*tarjetas*/
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta {
+    max-width: 300px; /* Ancho máximo igual al ancho de la imagen */
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregar la transición para la sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar la sombra en hover */
+}
+
+.tarjeta-header {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Añadir borde al encabezado */
+    position: relative; /* Establecer posición relativa para el encabezado */
+}
+
+.tarjeta-body {
+    display: none;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.tarjeta.expandida .tarjeta-body {
+    display: block;
+}
+.tarjeta-header img {
+    width: 100px; /* ajustar el ancho de la imagen */
+    height: auto; /* mantener la proporción */
+    position: absolute; /* Establecer posición absoluta para la imagen */
+    top: -50px; /* Mover la imagen hacia arriba */
+    left: 50%; /* Centrar la imagen horizontalmente */
+    transform: translateX(-50%); /* Ajustar el centrado horizontal */
+}
+
+.tarjeta-header h2 {
+    margin: 0;
+    position: relative; /* Establecer posición relativa para el título */
+    z-index: 1; /* Asegurar que el título esté encima de la imagen */
+}

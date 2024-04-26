@@ -10,36 +10,39 @@
 </head>
 <body>
 <div>
-<nav>
-    <ul class="sidebar">
-        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-        <li><a href="secundarypages/tecnologiasweb.html">Tecnologias y Diseño Web</a></li>
-        <li><a href="#">Produccion Digital</a></li>
-        <li><a href="#">Medios Audiovisuales</a></li>
-        <li><a href="#">Fotografia</a></li>
-        <li><a href="#">Galeria de Arte</a></li>
-        <li><a href="#">Teoria del Diseño</a></li>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                    <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+                </svg>
+            </a></li>
+            <li><a href="secundarypages/tecnologiasweb.html">Tecnologias y Diseño Web</a></li>
+            <li><a href="#">Produccion Digital</a></li>
+            <li><a href="#">Medios Audiovisuales</a></li>
+            <li><a href="#">Fotografia</a></li>
+            <li><a href="#">Galeria de Arte</a></li>
+            <li><a href="#">Teoria del Diseño</a></li>
 
 
+        </ul>
+        <ul>
+            <li><img src="images/img2.png" alt="Logo"></li>
+            <li class="hideOnMobile"><a href="secundarypages/tecnologiasweb.html">Tecnologias y Diseño Web</a></li>
+            <li class="hideOnMobile"><a href="#">Produccion Didital</a></li>
+            <li class="hideOnMobile"><a href="#">Medios Audiovisuales</a></li>
+            <li class="hideOnMobile"><a href="#">Fotografia</a></li>
+            <li class="hideOnMobile"><a href="#">Galeria de Arte</a></li>
+            <li class="hideOnMobile"><a href="#">Teoria del Diseño</a></li>
 
 
-    </ul>
-    <ul>
-        <li><img src="images/img2.png" alt="Logo"></li>
-        <li class="hideOnMobile"><a href="secundarypages/tecnologiasweb.html">Tecnologias y Diseño Web</a></li>
-        <li class="hideOnMobile"><a href="#">Produccion Didital</a></li>
-        <li class="hideOnMobile"><a href="#">Medios Audiovisuales</a></li>
-        <li class="hideOnMobile"><a href="#">Fotografia</a></li>
-        <li class="hideOnMobile"><a href="#">Galeria de Arte</a></li>
-        <li class="hideOnMobile"><a href="#">Teoria del Diseño</a></li>
-
-
-
-
-        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
-    </ul>
-</nav>
-
+            <li class="menu-button" onclick=showSidebar()><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+                    <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+                </svg>
+            </a></li>
+        </ul>
+    </nav>
 
 
     <section class="hero" id="hero">
@@ -50,47 +53,119 @@
         </div>
     </section>
     <!--botones-->
-    <div class="container">
-        <div class="button-container">
-            <a href="#" id="boton1" title="¿Qué es el Diseño Gráfico?" style="background-image: url('images/boton1.jpg')"> </a>
-            <a href="#" id="boton2" title="Principios" style="background-image: url('images/boton2.jpg')"> </a>
-            <a href="#" id="boton3" title="Áreas de Aplicación" style="background-image: url('images/boton3.jpg')"> </a>
-            <a href="#" id="boton4" title="Herramientas" style="background-image: url('images/boton4.jpg')"> </a>
-            <a href="#" id="boton5" title="El Papel del Diseñador Gráfico" style="background-image: url('images/boton5.jpg')"> </a>
-        </div>
-    </div>
 
-    <div id="info">
-        <!-- Aquí se mostrará la información -->
-    </div>
-    <!--Contendor-->
-    <div class="contenedor">
-        <div class="columna columna1">
-            <div class="section">
-                <img src="images/colum1.gif" alt="Descripción de la imagen">&nbsp;
-                <p><strong>1. Creatividad y Habilidades Técnicas:</strong><br>"Prometo utilizar mi creatividad y conocimientos técnicos para crear comunicaciones visuales impactantes y efectivas. Me comprometo a explorar nuevas ideas y enfoques innovadores en cada proyecto que emprenda, buscando siempre superar los límites de la creatividad en el diseño gráfico."</p>
+    <div class="contenido">
+        <div class="contenedor">
+            <div class="tarjeta">
+                <div class="tarjeta-header">
+                    <img src="images/boton1.jpg" alt="Imagen 1">
+                    <h2>¿Qué es el Diseño Gráfico? </h2>
+                </div>
+                <div class="tarjeta-body">
+                    <p>Explora cómo se diseñan, implementan y gestionan los sistemas basados en microservicios,
+                        incluyendo
+                        los beneficios y desafíos asociados.</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="tarjeta-header">
+                    <img src="images/boton2.jpg" alt="Imagen 1">
+                    <h2>Principios del Diseño Grafico</h2>
+                </div>
+                <div class="tarjeta-body">
+                    <p>Es un enfoque para el diseño de sistemas de software en el que los servicios son los componentes
+                        fundamentales y las interacciones entre ellos definen la funcionalidad del sistema. </p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="tarjeta-header">
+                    <img src="images/boton3.jpg" alt="Imagen 1">
+                    <h2>Áreas en el que se Áplica el Diseño Grafico</h2>
+                </div>
+                <div class="tarjeta-body">
+                    <p>Son soluciones probadas para problemas comunes en el diseño de arquitecturas de software. Estos
+                        patrones proporcionan un enfoque reutilizable para diseñar sistemas que sean robustos,
+                        flexibles,
+                        mantenibles y escalables. Aquí hay algunos patrones de diseño arquitectónico comunes</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="tarjeta-header">
+                    <img src="images/boton4.jpg" alt="Imagen 1">
+                    <h2>Herramientas para diseñar</h2>
+                </div>
+                <div class="tarjeta-body">
+                    <p>Es un enfoque de desarrollo de aplicaciones en el que el proveedor de servicios en la nube es
+                        responsable de administrar la infraestructura subyacente.</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="tarjeta-header">
+                    <img src="images/boton5.jpg" alt="Imagen 1">
+                    <h2>El Papel del Diseñador Gráfico</h2>
+                </div>
+                <div class="tarjeta-body">
+                    <p>Es el marco estructural que define cómo se organiza y se diseña una aplicación web para
+                        garantizar su
+                        funcionalidad, rendimiento, seguridad y escalabilidad. </p>
+                </div>
             </div>
         </div>
-        <div class="columna columna2">
-            <div class="section">
-                <img src="images/colum2.gif" alt="Descripción de la imagen">&nbsp;
-                <p><strong>2. Comprensión del Cliente y Audiencia:</strong><br>"Me comprometo a comprender profundamente las necesidades de mis clientes y las expectativas de mi audiencia. Antes de comenzar cualquier proyecto, dedicaré tiempo a escuchar y entender las metas y mensajes que desean comunicar. Esta comprensión será la base de mis diseños, asegurando que cada elemento visual tenga un propósito claro y significativo."</p>
+        <!--Contendor-->
+        <div class="contenedor">
+            <div class="columna columna1">
+                <div class="section">
+                    <img src="images/colum1.gif" alt="Descripción de la imagen">&nbsp;
+                    <p><strong>1. Creatividad y Habilidades Técnicas:</strong><br>"Prometo utilizar mi creatividad y
+                        conocimientos técnicos para crear comunicaciones visuales impactantes y efectivas. Me comprometo
+                        a explorar nuevas ideas y enfoques innovadores en cada proyecto que emprenda, buscando siempre
+                        superar los límites de la creatividad en el diseño gráfico."</p>
+                </div>
+            </div>
+            <div class="columna columna2">
+                <div class="section">
+                    <img src="images/colum2.gif" alt="Descripción de la imagen">&nbsp;
+                    <p><strong>2. Comprensión del Cliente y Audiencia:</strong><br>"Me comprometo a comprender
+                        profundamente las necesidades de mis clientes y las expectativas de mi audiencia. Antes de
+                        comenzar cualquier proyecto, dedicaré tiempo a escuchar y entender las metas y mensajes que
+                        desean comunicar. Esta comprensión será la base de mis diseños, asegurando que cada elemento
+                        visual tenga un propósito claro y significativo."</p>
+                </div>
+            </div>
+            <div class="columna columna3">
+                <div class="section">
+                    <img src="images/colum3.gif" alt="Descripción de la imagen">&nbsp;
+                    <p><strong>3. Principios del Diseño Gráfico:</strong><br>"Mi objetivo es aplicar los principios
+                        fundamentales del diseño gráfico en cada creación. Desde el equilibrio y el contraste hasta la
+                        jerarquía y el espacio, cada elemento será cuidadosamente considerado para transmitir mensajes
+                        claros, emocionantes y memorables. En cada proyecto, buscaré la armonía visual y la estética,
+                        sabiendo que estas cualidades son esenciales para una comunicación efectiva."</p>
+                </div>
+            </div>
+            <div class="columna columna4">
+                <div class="section">
+                    <img src="images/colum4l.gif" alt="Descripción de la imagen">&nbsp;
+                    <p><strong>4. Coherencia visual:</strong><br>"La coherencia en el diseño gráfico implica mantener un
+                        estilo unificado en todos los elementos visuales, como colores, tipografías, iconografía y
+                        composición. Esto ayuda a crear una identidad visual sólida y reconocible para una marca o
+                        proyecto. La coherencia también facilita la navegación del espectador a través de diferentes
+                        piezas de diseño, lo que refuerza el mensaje y la imagen de marca de manera efectiva."</p>
+                </div>
             </div>
         </div>
-        <div class="columna columna3">
-            <div class="section">
-                <img src="images/colum3.gif" alt="Descripción de la imagen">&nbsp;
-                <p><strong>3. Principios del Diseño Gráfico:</strong><br>"Mi objetivo es aplicar los principios fundamentales del diseño gráfico en cada creación. Desde el equilibrio y el contraste hasta la jerarquía y el espacio, cada elemento será cuidadosamente considerado para transmitir mensajes claros, emocionantes y memorables. En cada proyecto, buscaré la armonía visual y la estética, sabiendo que estas cualidades son esenciales para una comunicación efectiva."</p>
-            </div>
-        </div>
-        <div class="columna columna4">
-            <div class="section">
-                <img src="images/colum4l.gif" alt="Descripción de la imagen">&nbsp;
-                <p><strong>4. Coherencia visual:</strong><br>"La coherencia en el diseño gráfico implica mantener un estilo unificado en todos los elementos visuales, como colores, tipografías, iconografía y composición. Esto ayuda a crear una identidad visual sólida y reconocible para una marca o proyecto. La coherencia también facilita la navegación del espectador a través de diferentes piezas de diseño, lo que refuerza el mensaje y la imagen de marca de manera efectiva."</p>
-            </div>
-        </div>
-    </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            /*tarjetas*/
+            const tarjetas = document.querySelectorAll('.tarjeta');
 
-</div>
+            tarjetas.forEach(tarjeta => {
+                tarjeta.addEventListener('click', () => {
+                    tarjeta.classList.toggle('expandida');
+                });
+            });
+
+        </script>
+    </div>
 </body>
 </html>
