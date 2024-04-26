@@ -90,6 +90,7 @@ p img {
     margin-right: 10px; /* Espacio entre la imagen y el texto */
     max-width: 200px; /* Establecer un ancho máximo para la imagen */
     height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 10px;
 }
 .column .imagen-1 {
     display: block; /* Convertir la imagen en un bloque para poder aplicar márgenes automáticos */
@@ -97,6 +98,7 @@ p img {
     max-width: 100%; /* Establecer un ancho máximo para la imagen */
     height: auto; /* Mantener la proporción de la imagen */
     width: 500%; /* Ajustar el tamaño de la imagen al 80% del contenedor */
+    border-radius: 20px;
 }
 
 .column .imagen-2 {
@@ -105,6 +107,7 @@ p img {
     max-width: 100%; /* Establecer un ancho máximo para la imagen */
     height: 40%; /* Mantener la proporción de la imagen */
     width: 50%; /* Ajustar el tamaño de la imagen al 80% del contenedor */
+    border-radius: 20px;
 }
 .column ul {
     margin-bottom: 20px;
