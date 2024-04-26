@@ -82,12 +82,17 @@ hr {
 /* Hero Section */
 .hero {
 	background-color: #B3B3B3;
+    background-image: url(../images/background.jpg);
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 	padding-top: 150px;
 	padding-bottom: 150px;
 }
 .light {
 	font-weight: bold;
-	color: #717070;
+	color: #e08236;
 }
 .tagline {
 	text-align: center;
@@ -156,7 +161,7 @@ hr {
 /* Parallax Section */
 .banner {
 	background-color: #2D9AB7;
-	background-image: url(../images/parallax.png);
+	background-image: url(../images/web1.webp);
 	height: 400px;
 	background-attachment: fixed;
 	background-size: cover;
